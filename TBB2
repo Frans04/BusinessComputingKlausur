@@ -1,0 +1,67 @@
+Aufgabe 5: ##############################################################################################################################################################################
+
+Teilaufgabe Aufgabe 7: Zelle B10: =B9+$B$4+WENN(REST(ZEILE(B10)-8;3)=1;Summe(C7:C9);0)
+
+Zelle C9: =Wenn(B9≤1000;B9*5%/12; 1000*5%/12 + (B9-1000)*$B$5/12)
+
+Teilaufgabe Aufgabe 11) Spalten Kontostand + Zinsbetrag markieren → einfügen 
+
+Aufgabe 12) Rechtsklick auf Zahlen → Daten auswählen
+
+Aufgabe 14) Zahlen anklicken, dann auf + → Datenbeschriftung , Zahlen anklicken, rechtsklick, Datenbeschriftung formatieren
+##################################################################################################################################################################################################
+Aufgabe 6:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#############################################################################################################################################################################################
+# **Aufgabe 8:**
+
+ALLE AUFGABEN BLEIBEN FALSCH, BIS ALLES GELÖST IST!
+
+1. Suchen: Solver → aktivieren
+
+2. Die ganze alte Produktionsmatrix kopieren und unten rein einfügen. Danach das Format der alten PM auf benutzerdefiniert “#.##0 Stück” wählen.
+
+3. In der neuen Tabelle für die ganze Spalte “Kapazitätsbelegung pro Monat”:
+- In der ersten Zelle der Spalte → “=SUMMENPRODUKT(Produkt1 bis Produkt3 ~~Anlage 1_1 ,~~ ~~Neue Tabelle~~ ; Produkt1 bis Produkt3 ~~Anlage 1_1 Alte Tabelle~~) und DIE FORMEL für Stufe1 und 2  runterkopieren.
+
+4. Spalte Anlagekosten unten: 
+- Anlagekosten je Minute erste Zelle: Kapazitätsbelegung * Anlagekosten je Minute
+- Formel für Stufe 1 und 2 kopieren
+- Format für Spalte Kapazitätsbelegung und Variable Anlagekosten von oben runterkopieren
+
+5. “Fixkosten je Stück” ändern in “Gesamtmenge je Produktionsstufe” für die untere Tabelle
+- Gesamtmenge je Produktionsstufe: =SUMME(Anlage1_1 bis Anlage 1_2 UND für Produkt 2: Anlage 2_3)
+- Die Formel für die gesamte Zeile für Gesamtmenge P1 und P2 kopieren
+
+6. Eine ganz neue Zelle rechts neben Variable Anlagekosten im Monat: “Fixkosten”
+- Gesamtmenge je Produktionsstufe: =SUMMENPRODUKT(Gesamtmenge P1 bis P3 neue Tabelle) ; Fixkosten je Stück (P1 bis P3 alte Tabelle)
+- für Stufe 1 und Stufe 2 anwenden
+- Summe aus Fixkosten unten summieren
+- Summe aus Anlagekosten im Monat unten summieren
+
+7. Neue Zelle unten: Gesamtkosten =Summe aus Fixkosten und Anlagekosten im Monat
+
+8. 
+- Reiter Daten → Solver: Ziel Festlegen → Gesamtkosten (Geldbetrag) → Min → Durch Ändern… Alle Produktionsmengen je Stück (nicht Gesamtmenge) für Stufe 1 und 2 bei neuer Tabelle → Lösungsmethode Simplex LP → Optionen → Ganzzahloptimität 0% → Lösen
+
+- Alle Produktionszeiten (außer Gesamtmengen) für Produkt 1 (Also Anlage 1_1 und 1_2) auswählen → = → Ganzzahlig
+- Das gleiche für Produkt 2 → = → Ganzzahlig
+
+- Gesamtmenge Stufe 1: P1 + P2 + P3 → ≥ → NB: Zu erfüllende Auftragsmengen
+- Gesamtmenge Stufe 2: P1 + P2 + P3 → ≥ → NB: Zu erfüllende Auftragsmengen
+
+- 1 andere: ZB: Neue Tabelle: Kapazitätsbelegung ganz markieren → ≤ → NB: alte Tabelle Kapazitätsbelegung ganz markieren
+#################################################################################################################################################################################################################
