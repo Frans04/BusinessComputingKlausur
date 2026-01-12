@@ -1,3 +1,24 @@
+##################################################################################
+Aufgabe 4: 
+Teilaufgabe 2&3: B7: =Runden(ABS(RMZ(B3/12;B4*12;B5));2)
+
+Teilaufgabe 4: B9: =B7 * B4 * 12
+
+Teilaufgabe 7: Start-> kleiner Pfeil neben Schriftart -> Schutz -> gesperrt aufheben
+
+Teilaufgabe 15: B11: =B3-B8
+
+Teilaufgabe 16: C11: =B3 * (1-0,05)-C8
+
+Teilaufgabe 17:  B14: =RUNDEN(RMZ(B9/12;B10*12;-B11;B12;1);2)
+
+Teilaufgabe 19: B16: =B8+(B14 * B10 * 12) + B12
+
+Teilaufgabe 20: C16: =C8+(C14* C10 * 12)
+
+Teilaufgabe 22: B19: =WENN(B16<C16;B7;C7)
+
+###############
 Aufgabe 5: ##############################################################################################################################################################################
 
 Teilaufgabe Aufgabe 7: Zelle B10: =B9+$B$4+WENN(REST(ZEILE(B10)-8;3)=1;Summe(C7:C9);0)
