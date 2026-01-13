@@ -21,26 +21,31 @@ Teilaufgabe 22: B19: =WENN(B16<C16;B7;C7)
 ###############
 Aufgabe 5: ##############################################################################################################################################################################
 
-Teilaufgabe Aufgabe 7: Zelle B10: =B9+$B$4+WENN(REST(ZEILE(B10)-8;3)=1;Summe(C7:C9);0)
+Teilaufgabe 6: Zelle C9: =Wenn(B9<=1000;B9*5%/12; 1000*5%/12 + (B9-1000)*$B$5/12)
 
-Zelle C9: =Wenn(B9≤1000;B9*5%/12; 1000*5%/12 + (B9-1000)*$B$5/12)
+Teilaufgabe Aufgabe 7: Zelle B10: =B9+$B$4+WENN(REST(ZEILE(B10)-8;3)=1;Summe(C7:C9);0)
 
 Teilaufgabe Aufgabe 11) Spalten Kontostand + Zinsbetrag markieren → einfügen 
 
 Aufgabe 12) Rechtsklick auf Zahlen → Daten auswählen
 
 Aufgabe 14) Zahlen anklicken, dann auf + → Datenbeschriftung , Zahlen anklicken, rechtsklick, Datenbeschriftung formatieren
+
 ##################################################################################################################################################################################################
 Aufgabe 6:
 
 
+Teilaufgabe 2: = "Umsatz " &I2& " umständlich"
+Teilaufgabe 3: J2: =WENN(B2=$I$2;G2;"")
 
+Teilaufgabe 8: B36: =ZÄHLENWENN($B$2:$B$31;A36)
 
+Teilaufgabe 12: =SUMMEWENN($B$2:$B$31;A36;$G$2:$G$31)
 
+Teilaufgabe 14: =SUMMEWENN($C$2:$C$31;D36;$G$2:$G$31)
 
-
-
-
+Teilaufgabe 16: =UND(E2>50;F2>5000)
+"Formel zur Ermittlung der zu formatierenden Zellen"
 
 
 
